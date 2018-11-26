@@ -7,7 +7,6 @@ def improved_smallest_factor(n):
     if not n or (n <= 0) or (n == 1) or (type(n) == float):
         return None
     for i in range(2, int(n**.5) + 1):
-        print('for executed', i)
         if n % i == 0:
             return i
     return n
